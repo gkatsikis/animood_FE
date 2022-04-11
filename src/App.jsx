@@ -6,10 +6,12 @@ import Login from './pages/Login/Login'
 import Landing from './pages/Landing/Landing'
 import Profiles from './pages/Profiles/Profiles'
 import * as authService from './services/authService'
+import * as aniService from './services/animoods'
 
 const App = () => {
-  const [user, setUser] = useState(authService.getUser())
   const navigate = useNavigate()
+  const [user, setUser] = useState(authService.getUser())
+  const [animoods, setAnimoods] = useState([])
   console.log(user)
 
   const handleLogout = () => {
@@ -20,6 +22,11 @@ const App = () => {
 
   const handleSignupOrLogin = () => {
     setUser(authService.getUser())
+  }
+
+  const addAnimood = async (animoodData) => {
+    const animood = await aniService.create(animoodData)
+    setAnimoods([...animoods, animood])
   }
 
   return (
