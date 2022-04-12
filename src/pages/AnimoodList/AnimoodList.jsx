@@ -1,11 +1,11 @@
 import AnimoodForm from "../../components/AnimoodForm/AnimoodForm";
 
 
-const AnimoodList = (props) => {
+const AnimoodList = ({addAnimood, user}) => {
   return ( 
     <>
       <h1>Add a Mood</h1>
-      <AnimoodForm />
+      <AnimoodForm addAnimood={addAnimood} user={user} />
     </>
 
    );

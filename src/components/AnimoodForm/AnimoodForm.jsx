@@ -1,18 +1,15 @@
 import React, { useState, useEffect } from 'react';
-import { Navigate } from 'react-router-dom';
 import AnimoodInput from '../AnimoodInput/AnimoodInput';
-import { useParams, useNavigate } from 'react-router-dom'
-import { getOne } from '../../services/animoods'
+import { useNavigate } from 'react-router-dom'
 
 const AnimoodForm = (props) => {
-  const { id } = useParams()
   const navigate = useNavigate()
   const [form, setForm] = useState({})
 
   const handleSubmit = async (e) => {
     e.preventDefault()
     props.addAnimood(form)
-    navigate('/animood')
+    navigate('/profiles')
   }
 
   const handleChange = (e) => {

@@ -69,7 +69,7 @@ const App = () => {
         />
         <Route
         path="/animood" 
-        element={<AnimoodList />} 
+        element={<AnimoodList addAnimood={addAnimood} user={user} />} 
         />
       </Routes>
     </>
