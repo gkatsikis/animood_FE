@@ -12,17 +12,23 @@ import AnimoodList from './pages/AnimoodList/AnimoodList'
 // Services
 import * as authService from './services/authService'
 import * as aniService from './services/animoods'
+import * as profileService from './services/profileService'
 import { useEffect } from 'react/cjs/react.production.min'
 
 const App = () => {
   const navigate = useNavigate()
   const [user, setUser] = useState(authService.getUser())
   const [animoods, setAnimoods] = useState([])
-  console.log(user)
+  const [profile, setProfile] = useState([])
+  console.log(profile)
 
-  // useEffect(() => {
-  //   //fetch data from animoods service
-  // })
+  useEffect(()=> {
+    const fetchData = async () => {
+      const data = await profileService.getProfile()
+      setProfile(data)
+    }
+    fetchData()
+  }, [])
 
   const addAnimood = async (animoodData) => {
     const animood = await aniService.create(animoodData)
@@ -62,7 +68,7 @@ const App = () => {
         />
         <Route
           path="/profiles"
-          element={user ? <Profiles user={user} /> : <Navigate to="/login" />}
+          element={user ? <Profiles user={user} profile={profile} /> : <Navigate to="/login" />}
         />
         <Route
         path="/animood" 
