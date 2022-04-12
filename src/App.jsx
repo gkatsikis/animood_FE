@@ -8,6 +8,7 @@ import Login from './pages/Login/Login'
 import Landing from './pages/Landing/Landing'
 import Profiles from './pages/Profiles/Profiles'
 import AnimoodList from './pages/AnimoodList/AnimoodList'
+import FindVibe from './pages/FindVibe/FindVibe'
 
 // Services
 import * as authService from './services/authService'
@@ -71,6 +72,9 @@ const App = () => {
         path="/animood" 
         element={<AnimoodList addAnimood={addAnimood} user={user} />} 
         />
+        <Route
+        path="/findvibe"
+        element={<FindVibe />} />
       </Routes>
     </>
   )

@@ -9,7 +9,8 @@ const NavBar = ({ user, handleLogout }) => {
             <li>Welcome, {user.name}</li>
             <li><Link to="/profiles">Profiles</Link></li>
             <li><Link to="" onClick={handleLogout}>LOG OUT</Link></li>
-            <li><Link to="/animood">Add Mood</Link></li>
+            <li><Link to="/animood">Add a Mood</Link></li>
+            <li><Link to="/findvibe">Browse Moods</Link></li>
           </ul>
         </nav>
       :
