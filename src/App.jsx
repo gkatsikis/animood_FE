@@ -20,6 +20,15 @@ const App = () => {
   const [user, setUser] = useState(authService.getUser())
   const [animoods, setAnimoods] = useState([])
   const [profile, setProfile] = useState([])
+
+  useEffect(()=> {
+    const fetchData = async () => {
+      const data = await aniService.getAll()
+      setAnimoods(data)
+    }
+    fetchData()
+  }, [])
+
   useEffect(()=> {
     const fetchData = async () => {
       const data = await profileService.getProfile(user.id)
@@ -74,7 +83,7 @@ const App = () => {
         />
         <Route
         path="/findvibe"
-        element={<FindVibe />} />
+        element={<FindVibe animoods={animoods} />} />
       </Routes>
     </>
   )
