@@ -17,3 +17,12 @@ export const create = async (animood) => {
     throw error
   }
 }
+
+export const getOne = async (id) => {
+  try {
+    const res = await fetch(`${BASE_URL}${id}`)
+    return await res.json()
+  } catch (error) {
+    throw error
+  }
+}
