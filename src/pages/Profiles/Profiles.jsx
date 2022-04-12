@@ -1,8 +1,9 @@
 import { useState, useEffect } from 'react'
 import * as profileService from '../../services/profileService'
 
-const Profiles = () => {
+const Profiles = (user) => {
   const [profiles, setProfiles] = useState([])
+  console.log(user)
 
   useEffect(()=> {
     profileService.getAllProfiles()
@@ -11,15 +12,13 @@ const Profiles = () => {
 
   return (
     <>
-      <h1>Hello. This is a list of all the profiles.</h1>
+      <h1>Vibecheck {user.user.name}</h1>
       {profiles.length ? 
         <>
-          {profiles.map(profile=>
-            <p key={profile._id}>{profile.name}</p>
-          )}
+          <h1>This is where AnimoodCard will go get mapped</h1>
         </>
       :
-        <p>No profiles yet</p>
+        <p>No animoods yet</p>
       }
     </>
   )
