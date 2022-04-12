@@ -75,7 +75,7 @@ const App = () => {
         />
         <Route
           path="/profiles"
-          element={user ? <Profiles user={user} profile={profile.profile} /> : <Navigate to="/login" />}
+          element={user ? <Profiles user={user} animoods={animoods} profile={profile.profile} /> : <Navigate to="/login" />}
         />
         <Route
         path="/animood" 

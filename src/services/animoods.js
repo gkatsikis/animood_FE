@@ -26,3 +26,7 @@ export const getAll = async () => {
     throw error
   }
 }
+
+export const getAllByProfile = async () => {
+  
+}
