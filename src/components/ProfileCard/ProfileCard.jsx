@@ -15,7 +15,7 @@ const ProfileCard = ({ user, profile, animood, deleteAnimood }) => {
     <>
     <form action="">
       <div className="card-content">
-        <h2>Anime Name: {animood.name}</h2>s
+        <h2>{animood.name}</h2>
         <h3>Theme: {animood.theme}</h3>
         <h3>Episode/Chapter: {animood.episode}</h3>
         <p>Story: {animood.story}</p>
