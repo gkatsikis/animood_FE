@@ -47,7 +47,8 @@ const App = () => {
   }
 
   const deleteAnimood = async (id) => {
-
+    await aniService.deleteOne(id)
+    setAnimoods(animoods.filter(animood => animood.id !== parseInt(id)))
   }
 
   const handleLogout = () => {

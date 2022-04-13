@@ -27,6 +27,39 @@ export const getAll = async () => {
   }
 }
 
-export const getAllByProfile = async () => {
-  
+export const getOne = async (id) => {
+  try {
+    const res = await fetch(`${BASE_URL}/${id}`)
+    return await res.json()
+  } catch (error) {
+    throw error
+  }
+}
+
+export const update = async (animood) => {
+  try {
+    const res = await fetch(`${BASE_URL}/${animood.id}`, {
+      method: 'PUT',
+      headers: {
+        'content-type': 'application/json',
+        'Authorization': `Bearer ${tokenService.getToken()}`
+      },
+      body: JSON.stringify(animood)
+    })
+    return await res.json()
+  } catch (error) {
+    throw error
+  }
+}
+
+export const deleteOne = async (id) => {
+  try {
+    const res = await fetch (`${BASE_URL}/${id}`, {
+      method: "DELETE",
+      headers: { 'Authorization': `Bearer ${tokenService.getToken()}`}
+    })
+    return await res.json()
+  } catch (error) {
+    throw error
+  }
 }
