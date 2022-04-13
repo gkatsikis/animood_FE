@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import * as profileService from '../../services/profileService'
 import ProfileCard from '../../components/ProfileCard/ProfileCard'
 
-const Profiles = ({ user, profile, animoods }) => {
+const Profiles = ({ user, profile, animoods, deleteAnimood }) => {
   console.log('author', animoods)
   console.log('profile', profile)
   return (
@@ -13,7 +13,8 @@ const Profiles = ({ user, profile, animoods }) => {
         {animoods.map((animood) => {
           if (animood.profile_id === profile.id) {
             return <ProfileCard
-            animood={animood} 
+            animood={animood}
+            deleteAnimood={deleteAnimood} 
             key={animood.id} 
             />
           }

@@ -14,6 +14,7 @@ import FindVibe from './pages/FindVibe/FindVibe'
 import * as authService from './services/authService'
 import * as aniService from './services/animoods'
 import * as profileService from './services/profileService'
+import EditPage from './pages/EditPage/EditPage'
 
 const App = () => {
   const navigate = useNavigate()
@@ -43,10 +44,14 @@ const App = () => {
   }
 
   const updateAnimood = async (animoodData) => {
-
+      const updatedAnimood = await aniService.update(animoodData)
+      setAnimoods(animoods.map((animood) => (
+        animood.id === updatedAnimood.id ? updatedAnimood : animood
+      )))
   }
 
   const deleteAnimood = async (id) => {
+    console.log('deleteAnimood id', id)
     await aniService.deleteOne(id)
     setAnimoods(animoods.filter(animood => animood.id !== parseInt(id)))
   }
@@ -75,8 +80,8 @@ const App = () => {
           element={<Login handleSignupOrLogin={handleSignupOrLogin} />}
         />
         <Route
-          path="/profiles"
-          element={user ? <Profiles user={user} animoods={animoods} profile={profile.profile} /> : <Navigate to="/login" />}
+          path="/profile"
+          element={user ? <Profiles user={user} animoods={animoods} deleteAnimood={deleteAnimood} profile={profile.profile} /> : <Navigate to="/login" />}
         />
         <Route
         path="/animood" 
@@ -85,6 +90,9 @@ const App = () => {
         <Route
         path="/findvibe"
         element={<FindVibe animoods={animoods} />} />
+        <Route
+        path="/edit"
+        element={<EditPage updateAnimood={updateAnimood} getOne={aniService.getOne} />} />
       </Routes>
     </>
   )
