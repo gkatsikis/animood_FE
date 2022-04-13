@@ -39,6 +39,7 @@ const EditPage = (props) => {
 
   return ( 
     <>
+    {!validForm && <p>error</p>}
     <form ref={formElement}>
       <label htmlFor="name">Name</label>
       <input

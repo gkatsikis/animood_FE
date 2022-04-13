@@ -36,7 +36,7 @@ const App = () => {
       setProfile(data)
     }
     fetchData()
-  }, [])
+  }, [user.id])
 
   const addAnimood = async (animoodData) => {
     const animood = await aniService.create(animoodData)

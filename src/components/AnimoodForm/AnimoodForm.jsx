@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import AnimoodInput from '../AnimoodInput/AnimoodInput';
 import { useNavigate } from 'react-router-dom'
 
