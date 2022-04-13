@@ -13,14 +13,12 @@ import FindVibe from './pages/FindVibe/FindVibe'
 // Services
 import * as authService from './services/authService'
 import * as aniService from './services/animoods'
-import * as profileService from './services/profileService'
 import EditPage from './pages/EditPage/EditPage'
 
 const App = () => {
   const navigate = useNavigate()
   const [user, setUser] = useState(authService.getUser())
   const [animoods, setAnimoods] = useState([])
-  const [profile, setProfile] = useState([])
 
   useEffect(()=> {
     const fetchData = async () => {
@@ -29,14 +27,6 @@ const App = () => {
     }
     fetchData()
   }, [])
-
-  useEffect(()=> {
-    const fetchData = async () => {
-      const data = await profileService.getProfile(user.id)
-      setProfile(data)
-    }
-    fetchData()
-  }, [user.id])
 
   const addAnimood = async (animoodData) => {
     const animood = await aniService.create(animoodData)
@@ -81,7 +71,7 @@ const App = () => {
         />
         <Route
           path="/profile"
-          element={user ? <Profiles user={user} animoods={animoods} deleteAnimood={deleteAnimood} profile={profile.profile} /> : <Navigate to="/login" />}
+          element={user ? <Profiles user={user} animoods={animoods} deleteAnimood={deleteAnimood} /> : <Navigate to="/login" />}
         />
         <Route
         path="/animood" 

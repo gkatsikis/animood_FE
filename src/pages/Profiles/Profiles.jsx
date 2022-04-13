@@ -1,7 +1,19 @@
-
+import React, { useEffect, useState } from 'react';
+import * as profileService from '../../services/profileService'
 import ProfileCard from '../../components/ProfileCard/ProfileCard'
 
-const Profiles = ({ user, profile, animoods, deleteAnimood }) => {
+const Profiles = ({ user, animoods, deleteAnimood }) => {
+  const [profile, setProfile] = useState()
+  console.log('profile', profile)
+
+  useEffect(()=> {
+    const fetchData = async () => {
+      const data = await profileService.getProfile(user.id)
+      setProfile(data.profile)
+    }
+    fetchData()
+  }, [user.id])
+
   return (
     <>
       <h1>Vibecheck {user.name}</h1>
