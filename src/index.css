@@ -51,10 +51,11 @@ code {
 
 .card-content {
   display: flex;
+  flex-direction: column;
   width: 33%;
   margin: 10px;
   padding: 10px;
-  justify-content: center;
+  align-items: center;
   border: 5px solid black;
   border-radius: 5%;
   flex-wrap: wrap;
@@ -73,4 +74,14 @@ code {
 
 .btn:hover {
   cursor: pointer;
+}
+
+.input-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.input {
+  border-color: lightsteelblue;
+  box-shadow: 2px 2px;
 }
