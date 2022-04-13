@@ -15,7 +15,7 @@ const ProfileCard = ({ user, profile, animood, deleteAnimood }) => {
     <>
     <form action="">
       <div className="card-content">
-        <h2>Anime Name: {animood.name}</h2>
+        <h2>Anime Name: {animood.name}</h2>s
         <h3>Theme: {animood.theme}</h3>
         <h3>Episode/Chapter: {animood.episode}</h3>
         <p>Story: {animood.story}</p>
@@ -24,7 +24,8 @@ const ProfileCard = ({ user, profile, animood, deleteAnimood }) => {
               to='/edit'
             state={{ animood }}
             >
-             <button className="btn">Edit</button>
+             <button
+             type="button" className="btn">Edit</button>
             </Link>
         
         <button type="button" onClick={handleDelete} className="btn">Delete</button>

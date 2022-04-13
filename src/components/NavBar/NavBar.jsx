@@ -4,7 +4,7 @@ const NavBar = ({ user, handleLogout }) => {
   return (
     <>
       {user ?
-        <nav>
+        <nav className="nav">
           <ul>
             <li>Welcome, {user.name}</li>
             <li><Link to="/profile">Profile</Link></li>

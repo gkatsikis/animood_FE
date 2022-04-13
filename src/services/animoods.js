@@ -38,7 +38,7 @@ export const getOne = async (id) => {
 
 export const update = async (animood) => {
   try {
-    const res = await fetch(`${BASE_URL}/${animood.id}`, {
+    const res = await fetch(`${BASE_URL}${animood.id}`, {
       method: 'PUT',
       headers: {
         'content-type': 'application/json',

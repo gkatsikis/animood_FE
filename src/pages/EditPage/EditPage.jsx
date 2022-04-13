@@ -39,27 +39,31 @@ const EditPage = (props) => {
 
   return ( 
     <>
-    <form ref={formElement} autocomplete="off">
+    <form ref={formElement}>
       <label htmlFor="name">Name</label>
       <input
       type="text"
       required name="name"
-      
+      value={form.name}
+      onChange={handleChange}
       />
       <label htmlFor="theme">Theme</label>
       <input type="text"
       required name="theme"
-       
+      value={form.theme}
+      onChange={handleChange}
       />
       <label htmlFor="episode">Episode or Chapter</label>
       <input type="text"
       name="episode"
-       
+      value={form.episode}
+      onChange={handleChange}
       />
       <label htmlFor="story">Story</label>
       <textarea type="text"
       required name="story"
-      
+      value={form.story}
+      onChange={handleChange}
       />
       <button type="submit" className="btn" onClick={handleSubmit} >Submit</button>
     </form>

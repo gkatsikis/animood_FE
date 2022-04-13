@@ -3,8 +3,6 @@ import * as profileService from '../../services/profileService'
 import ProfileCard from '../../components/ProfileCard/ProfileCard'
 
 const Profiles = ({ user, profile, animoods, deleteAnimood }) => {
-  console.log('author', animoods)
-  console.log('profile', profile)
   return (
     <>
       <h1>Vibecheck {user.name}</h1>
