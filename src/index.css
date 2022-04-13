@@ -9,13 +9,28 @@ body {
   background-image: url("https://i.imgur.com/7JUAESX.jpeg");
   background-repeat: no-repeat;
   background-size: 300%;
-  font-family: 'Rubik Microbe', cursive;
+  font-family: 'Spectral', serif;
   color: white;
   letter-spacing: 2px;
 }
 
 nav {
   margin: 10px;
+}
+
+nav li {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-ul {
+  display: flex;
+  justify-content: center;
+  
 }
 
 nav li:hover {
@@ -48,11 +63,12 @@ code {
 }
 
 .btn {
-  width: 100%;
+  width: 15rem;
   margin: 3px;
   background-color:rgb(57, 57, 57);
   color: whitesmoke;
   font-weight: bold;
+  border-radius: 10%;
 }
 
 .btn:hover {

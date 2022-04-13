@@ -20,14 +20,12 @@ const ProfileCard = ({ user, profile, animood, deleteAnimood }) => {
         <h3>Episode/Chapter: {animood.episode}</h3>
         <p>Story: {animood.story}</p>
         <Link
-              className='btn'
-              to='/edit'
-            state={{ animood }}
-            >
-             <button
-             type="button" className="btn">Edit</button>
-            </Link>
-        
+        to='/edit'
+        state={{ animood }}
+        >
+        <button
+        type="button" className="btn">Edit</button>
+        </Link>
         <button type="button" onClick={handleDelete} className="btn">Delete</button>
       </div>
       </form>

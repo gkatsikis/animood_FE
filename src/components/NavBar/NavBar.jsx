@@ -4,8 +4,8 @@ const NavBar = ({ user, handleLogout }) => {
   return (
     <>
       {user ?
-        <nav className="nav">
-          <ul>
+        <nav>
+          <ul className="nav-ul">
             <li>Welcome, {user.name}</li>
             <li><Link to="/profile">Profile</Link></li>
             <li><Link to="" onClick={handleLogout}>LOG OUT</Link></li>
