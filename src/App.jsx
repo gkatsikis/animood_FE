@@ -5,7 +5,6 @@ import { Routes, Route, useNavigate, Navigate } from 'react-router-dom'
 import NavBar from './components/NavBar/NavBar'
 import Signup from './pages/Signup/Signup'
 import Login from './pages/Login/Login'
-import Landing from './pages/Landing/Landing'
 import Profiles from './pages/Profiles/Profiles'
 import AnimoodList from './pages/AnimoodList/AnimoodList'
 import FindVibe from './pages/FindVibe/FindVibe'
@@ -60,7 +59,6 @@ const App = () => {
     <>
       <NavBar user={user} handleLogout={handleLogout} />
       <Routes>
-        <Route path="/" element={<Landing user={user} />} />
         <Route
           path="/signup"
           element={<Signup handleSignupOrLogin={handleSignupOrLogin} />}
@@ -78,7 +76,7 @@ const App = () => {
         element={<AnimoodList addAnimood={addAnimood} user={user} />} 
         />
         <Route
-        path="/findvibe"
+        path="/"
         element={<FindVibe animoods={animoods} />} />
         <Route
         path="/edit"

@@ -7,11 +7,9 @@ const NavBar = ({ user, handleLogout }) => {
         <nav>
           <ul className="nav-ul">
             <li>Welcome, {user.name}</li>
-            <li>
-              <Link to="/profile">
-              Profile</Link></li>
+            <li><Link to="/profile">Profile</Link></li>
             <li><Link to="/animood">Add a Mood</Link></li>
-            <li><Link to="/findvibe">Browse Moods</Link></li>
+            <li><Link to="/">Browse Moods</Link></li>
             <li><Link to="" onClick={handleLogout}>Logout</Link></li>
           </ul>
         </nav>
