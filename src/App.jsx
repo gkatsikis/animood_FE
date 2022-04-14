@@ -27,7 +27,7 @@ const App = () => {
     }
     fetchData()
   }, [])
-
+  
   const addAnimood = async (animoodData) => {
     const animood = await aniService.create(animoodData)
     setAnimoods([...animoods, animood])
