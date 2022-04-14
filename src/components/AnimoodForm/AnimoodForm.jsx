@@ -21,7 +21,7 @@ const AnimoodForm = (props) => {
       <section className="form-container">
         <form onSubmit={handleSubmit}>
           <AnimoodInput form={form} handleChange={handleChange}/>
-          <button type="submit" className="btn submit">Add Mood</button>
+          <button type="submit" className="btn">Add Mood</button>
         </form>
       </section>
     </>
