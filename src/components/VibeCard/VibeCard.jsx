@@ -6,7 +6,7 @@ const VibeCard = (props) => {
         <h2>{props.animood.name}</h2>
         <h3>Feels~ {props.animood.theme}</h3>
         <h3>Episode: {props.animood.episode}</h3>
-        <p>What did it make you feel?{props.animood.story}</p>
+        <p>{props.animood.story}</p>
       </div>
     </>
    );

@@ -16,7 +16,7 @@ const ProfileCard = ({ user, profile, animood, deleteAnimood }) => {
       <div className="pcard-content">
         <h2>{animood.name}</h2>
         <h3>Theme: {animood.theme}</h3>
-        <h3>Episode/Chapter: {animood.episode}</h3>
+        <h3>Episode: {animood.episode}</h3>
         <p>Story: {animood.story}</p>
         <Link
         to='/edit'
