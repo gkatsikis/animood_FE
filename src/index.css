@@ -19,8 +19,8 @@ body {
   font-family: 'Spectral', serif;
   color: black;
   letter-spacing: 2px;
-  background-image: linear-gradient(to left bottom, #03045e, #004491, #257eb7, #76b8d6, #caf0f8);
-
+  background-image: linear-gradient(to left bottom, #cddafd, #d2ddfd, #d6e0fd, #dbe4fd, #dfe7fd);
+  color: white;
 }
 
 nav {
@@ -68,6 +68,7 @@ a {
   text-decoration: none;
   color: whitesmoke;
   font-weight: bold;
+  font-size: 1.5rem;
 }
 
 nav ul {
@@ -86,6 +87,7 @@ header {
 
 h1 {
   text-align: center;
+  font-size: 3rem;
 }
 
 p {
@@ -122,8 +124,8 @@ code {
   padding: 10px;
   border: 5px solid black;
   border-radius: 5%;
-  box-shadow: 5px 5px;
-  background-image: linear-gradient(to right top, #004b23, #287630, #56a438, #8cd139, #ccff33);
+  box-shadow: 5px 5px black;
+  background-image: linear-gradient(to left bottom, #1a759f, #0980a3, #0b8ba5, #1e96a5, #34a0a4);
 }
 
 .btn {
