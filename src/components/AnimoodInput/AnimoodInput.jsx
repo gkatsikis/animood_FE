@@ -28,6 +28,7 @@ const AnimoodInput = ({ form, handleChange }) => {
       type="text"
       required name="story" placeholder=" What's the story behind this scene"
       onChange={handleChange}
+      maxLength="250"
       />
     </div>
    );
