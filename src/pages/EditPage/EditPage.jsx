@@ -25,43 +25,38 @@ const EditPage = (props) => {
   console.log('props on edit page', props)
   console.log('profile', location)
 
-
-
-  // useEffect(() => {
-  //     setForm({
-  //       name: location.animood.name,
-  //       theme: location.animood.theme,
-  //       episode: location.animood.episode,
-  //       story: location.animood.story
-  //     })
-  //   }
-  // )
-
   return ( 
     <>
     {!validForm && <p>error</p>}
-    <form ref={formElement}>
+    <form className="input-box" ref={formElement}>
       <label htmlFor="name">Name</label>
       <input
+      className="input"
       type="text"
       required name="name"
       value={form.name}
       onChange={handleChange}
       />
       <label htmlFor="theme">Theme</label>
-      <input type="text"
+      <input
+      className="input" 
+      type="text"
       required name="theme"
       value={form.theme}
       onChange={handleChange}
       />
       <label htmlFor="episode">Episode or Chapter</label>
-      <input type="text"
+      <input 
+      className="input"
+      type="text"
       name="episode"
       value={form.episode}
       onChange={handleChange}
       />
       <label htmlFor="story">Story</label>
-      <textarea type="text"
+      <textarea 
+      className="input-area"
+      type="text"
       required name="story"
       value={form.story}
       onChange={handleChange}
