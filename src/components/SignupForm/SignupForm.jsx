@@ -43,9 +43,10 @@ const SignupForm = props => {
       onSubmit={handleSubmit}
       className={styles.container}
     >
-      <div className={styles.inputContainer}>
+      <div className="input-box">
         <label htmlFor="name" className={styles.label}>Name</label>
         <input
+          className="input"
           type="text"
           autoComplete="off"
           id="name"
@@ -54,9 +55,10 @@ const SignupForm = props => {
           onChange={handleChange}
         />
       </div>
-      <div className={styles.inputContainer}>
+      <div className="input-box">
         <label htmlFor="email" className={styles.label}>Email</label>
         <input
+          className="input"
           type="text"
           autoComplete="off"
           id="email"
@@ -65,9 +67,10 @@ const SignupForm = props => {
           onChange={handleChange}
         />
       </div>
-      <div className={styles.inputContainer}>
+      <div className="input-box">
         <label htmlFor="password" className={styles.label}>Password</label>
         <input
+          className="input"
           type="password"
           autoComplete="off"
           id="password"
@@ -76,11 +79,12 @@ const SignupForm = props => {
           onChange={handleChange}
         />
       </div>
-      <div className={styles.inputContainer}>
+      <div className="input-box">
         <label htmlFor="confirm" className={styles.label}>
           Confirm Password
         </label>
         <input
+          className="input"
           type="password"
           autoComplete="off"
           id="confirm"

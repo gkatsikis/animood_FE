@@ -6,6 +6,7 @@
 * {
   margin: 0;
   padding: 0;
+  min-height: 100%;
 }
 
 body {
@@ -106,11 +107,11 @@ code {
   margin: 10px;
   padding: 15px;
   align-items: center;
-  border: 3px solid black;
+  border: 3px solid whitesmoke;
   border-radius: 5%;
   flex-wrap: wrap;
   box-sizing: border-box;
-  box-shadow: 5px 5px black;
+  box-shadow: 5px 5px white;
   color: whitesmoke;
   background-image: linear-gradient(to left bottom, #4d194d, #411f4d, #37234a, #2e2546, #272640);
 }
@@ -122,9 +123,9 @@ code {
   width: 40%;
   margin: 10px;
   padding: 10px;
-  border: 5px solid black;
+  border: 5px solid whitesmoke;
   border-radius: 5%;
-  box-shadow: 5px 5px black;
+  box-shadow: 5px 5px white;
   background-image: linear-gradient(to left bottom, #1a759f, #0980a3, #0b8ba5, #1e96a5, #34a0a4);
 }
 
@@ -134,9 +135,10 @@ code {
   background-color:rgb(57, 57, 57);
   color: whitesmoke;
   font-weight: bold;
-  border-radius: 10%;
   margin: auto;
+  margin: 2px;
   margin-top: 15px;
+  padding: 10px
 }
 
 .btn:hover {
@@ -147,6 +149,12 @@ form {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
 .form-container {
@@ -160,16 +168,21 @@ form {
   height: 100%;
   flex-direction: column;
   align-items: center;
+  margin: 5px;
 }
 
 .input {
   width: 20rem;
   height: 2rem;
+  border-radius: 1%;
+  border: none;
 }
 
 .input-area {
   width: 20rem;
   height: 15rem;
+  border: none;
+  border-radius: 1%;
 }
 
 .robin {
