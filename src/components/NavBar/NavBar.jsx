@@ -6,13 +6,19 @@ const NavBar = ({ user, handleLogout }) => {
       {user ?
         <nav>
           <ul className="nav-ul">
+            <div className="nav-wrap">
+              <div className="logo-img">
             <li>
               <img className="robin" src="https://i.imgur.com/Q2zdF4v.png" alt="robin from one piece" />
             </li>
+            </div>
+            <div className="nav-links">
             <li><Link to="/profile">Profile</Link></li>
             <li><Link to="/animood">Add a Mood</Link></li>
             <li><Link to="/">Browse Moods</Link></li>
             <li><Link to="" onClick={handleLogout}>Logout</Link></li>
+            </div>
+            </div>
           </ul>
         </nav>
       :

@@ -24,7 +24,7 @@ const AnimoodInput = ({ form, handleChange }) => {
       />
       <label htmlFor="story">Story</label>
       <textarea 
-      className="input"
+      className="input-area"
       type="text"
       required name="story" placeholder="What's the story behind this scene"
       onChange={handleChange}
