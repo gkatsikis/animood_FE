@@ -193,3 +193,13 @@ form {
   border-radius: 35%;
   align-items: left;
 }
+
+@media only screen and (max-width: 480px) {
+
+  body {
+    background-color: purple;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  
+}
