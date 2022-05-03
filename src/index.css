@@ -11,16 +11,13 @@
 
 body {
   margin: 0;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
   'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
   sans-serif;
   font-family: 'Spectral', serif;
   color: black;
   letter-spacing: 2px;
-  background-image: linear-gradient(to left bottom, #cddafd, #d2ddfd, #d6e0fd, #dbe4fd, #dfe7fd);
+  background-image: linear-gradient(to left bottom, #cf85fd, #d2ddfd, #d6e0fd, #dbe4fd, #cf85fd);
   color: white;
 }
 
@@ -116,18 +113,6 @@ code {
   background-image: linear-gradient(to left bottom, #4d194d, #411f4d, #37234a, #2e2546, #272640);
 }
 
-.pcard-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 25rem;
-  margin: 10px;
-  padding: 10px;
-  border: 5px solid whitesmoke;
-  border-radius: 5%;
-  box-shadow: 5px 5px white;
-  background-image: linear-gradient(to left bottom, #1a759f, #0980a3, #0b8ba5, #1e96a5, #34a0a4);
-}
 
 .btn {
   width: 15rem;
@@ -144,10 +129,21 @@ code {
   cursor: pointer;
 }
 
-form {
+.profile-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
+  width: 100%;
+}
+
+.pcard-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 25rem;
+  background-image: linear-gradient(to left bottom, #1a759f, #0980a3, #0b8ba5, #1e96a5, #34a0a4);
 }
 
 .login-message {

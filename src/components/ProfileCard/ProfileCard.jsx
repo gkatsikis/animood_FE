@@ -11,7 +11,7 @@ const ProfileCard = ({ user, profile, animood, deleteAnimood }) => {
   }
 
   return ( 
-    <>
+    <div className="profile-container">
     <form action="">
       <div className="pcard-content">
         <h2>{animood.name}</h2>
@@ -28,7 +28,7 @@ const ProfileCard = ({ user, profile, animood, deleteAnimood }) => {
         <button type="button" onClick={handleDelete} className="btn">Delete</button>
       </div>
       </form>
-    </>
+    </div>
    );
 }
  
