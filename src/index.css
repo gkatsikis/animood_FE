@@ -97,20 +97,26 @@ code {
     monospace;
 }
 
+.card {
+  width: 30rem;
+  height: 20rem;
+  margin: 20px;
+}
+
 .card-content {
   display: flex;
   flex-direction: column;
-  width: 33%;
-  margin: 10px;
-  padding: 15px;
+  justify-content: center;
   align-items: center;
-  border: 3px solid whitesmoke;
   border-radius: 5%;
-  flex-wrap: wrap;
-  box-sizing: border-box;
-  box-shadow: 5px 5px white;
+  width: 100%;
   color: whitesmoke;
   background-image: linear-gradient(to left bottom, #4d194d, #411f4d, #37234a, #2e2546, #272640);
+}
+
+.content {
+  margin: 15px;
+  font-size: 1.2rem;
 }
 
 
@@ -131,7 +137,6 @@ code {
 
 .profile-container {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   width: 30rem;
@@ -141,10 +146,7 @@ code {
 
 .pcard-content {
   border-radius: 5%;
-  flex-wrap: wrap;
-  justify-content: center;
   text-align: center;
-  border: 5px solid white;
   background-image: linear-gradient(to left bottom, #ffb434, #fdd87a, #fde5af, #fdd87a, #ffb434);
 }
 

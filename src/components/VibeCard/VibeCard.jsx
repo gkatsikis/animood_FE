@@ -1,14 +1,14 @@
 
 const VibeCard = (props) => {
   return ( 
-    <>
+    <div className="card">
       <div className="card-content">
-        <h2>{props.animood.name}</h2>
-        <h3>Feels~ {props.animood.theme}</h3>
-        <h3>Episode: {props.animood.episode}</h3>
-        <p>{props.animood.story}</p>
+        <div className="content">{props.animood.name}</div>
+        <div className="content">Feels~ {props.animood.theme}</div>
+        <div className="content">Episode: {props.animood.episode}</div>
+        <div className="content">{props.animood.story}</div>
       </div>
-    </>
+    </div>
    );
 }
 
