@@ -134,9 +134,9 @@ code {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  width: 33.33%;
+  width: 30rem;
   height: 20rem;
-  margin: 7px;
+  margin: 20px;
 }
 
 .pcard-content {
@@ -144,6 +144,7 @@ code {
   flex-wrap: wrap;
   justify-content: center;
   text-align: center;
+  border: 5px solid white;
   background-image: linear-gradient(to left bottom, #ffb434, #fdd87a, #fde5af, #fdd87a, #ffb434);
 }
 
