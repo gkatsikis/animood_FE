@@ -17,8 +17,8 @@ body {
   font-family: 'Spectral', serif;
   color: black;
   letter-spacing: 2px;
-  background-image: linear-gradient(to left bottom, #ffb434, #fdd87a, #fde5af, #fdd87a, #ffb434);
-  color: white;
+  background-color: whitesmoke;
+  color: #9c5d04;
 }
 
 nav {
@@ -64,7 +64,7 @@ li {
 
 a {
   text-decoration: none;
-  color: whitesmoke;
+  color: #9c5d04;
   font-weight: bold;
   font-size: 1.5rem;
 }
@@ -134,16 +134,23 @@ code {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  width: 100%;
+  width: 33.33%;
+  height: 20rem;
+  margin: 7px;
 }
 
 .pcard-content {
-  display: flex;
-  flex-direction: row;
+  border-radius: 5%;
   flex-wrap: wrap;
   justify-content: center;
-  width: 25rem;
-  background-image: linear-gradient(to left bottom, #1a759f, #0980a3, #0b8ba5, #1e96a5, #34a0a4);
+  text-align: center;
+  background-image: linear-gradient(to left bottom, #ffb434, #fdd87a, #fde5af, #fdd87a, #ffb434);
+}
+
+.title {
+  color:black;
+  font-weight: bold;
+  text-decoration: underline;
 }
 
 .login-message {
@@ -195,6 +202,11 @@ code {
   body {
     background-color: purple;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  .profile-container {
+    width: 100%;
+    align-content: center;
   }
 
   
