@@ -4,7 +4,6 @@ import ProfileCard from '../../components/ProfileCard/ProfileCard'
 
 const Profiles = ({ user, animoods, deleteAnimood }) => {
   const [profile, setProfile] = useState()
-  console.log('profile', profile)
 
   useEffect(()=> {
     const fetchData = async () => {
