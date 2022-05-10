@@ -2,11 +2,19 @@
 const VibeCard = (props) => {
   return ( 
     <div className="card">
-      <div className="card-content">
-        <div className="content">{props.animood.name}</div>
-        <div className="content">Feels~ {props.animood.theme}</div>
-        <div className="content">Episode: {props.animood.episode}</div>
-        <div className="content">{props.animood.story}</div>
+      <div className="container">
+        <div className="front">
+          <div className="inner">
+            <h2 className="content">{props.animood.name}</h2>
+            <h3 className="content">Feels~ {props.animood.theme}</h3>
+          </div>
+      </div>
+      <div className="back">
+        <div className="inner">
+          <h3 className="content">Episode: {props.animood.episode}</h3>
+          <p className="content">{props.animood.story}</p>
+        </div>
+      </div>
       </div>
     </div>
    );
