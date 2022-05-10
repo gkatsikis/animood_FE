@@ -100,9 +100,21 @@ code {
     monospace;
 }
 
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .card {
-  width: 33%;
-  margin: 20px;
+  width: calc(30% - 1rem);
+  margin: 1rem;
+  cursor: pointer;
 }
 
 .front {

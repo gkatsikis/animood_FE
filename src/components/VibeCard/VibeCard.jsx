@@ -1,6 +1,7 @@
 
 const VibeCard = (props) => {
   return ( 
+    
     <div className="card">
       <div className="container">
         <div className="front">
