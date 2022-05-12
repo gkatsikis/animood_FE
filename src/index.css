@@ -251,7 +251,18 @@ code {
 }
 
 
-.btn {
+.btn-delete {
+  width: 15rem;
+  margin: 3px;
+  background-color:rgb(57, 57, 57);
+  color: whitesmoke;
+  font-weight: bold;
+  margin: auto;
+  margin-top: 15px;
+  padding: 10px;
+}
+
+.btn-edit {
   width: 15rem;
   margin: 3px;
   background-color:rgb(57, 57, 57);
@@ -278,7 +289,8 @@ code {
 .pcard-content {
   border-radius: 5%;
   text-align: center;
-  background-image: linear-gradient(to left bottom, #ffb434, #fdd87a, #fde5af, #fdd87a, #ffb434);
+  background-image: url(https://unsplash.it/500/500/);
+  /* opacity: 50%; */
 }
 
 .title {

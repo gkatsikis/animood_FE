@@ -23,9 +23,9 @@ const ProfileCard = ({ user, profile, animood, deleteAnimood }) => {
         state={{ animood }}
         >
         <button
-        type="button" className="btn">Edit</button>
+        type="button" className="btn btn-edit">Edit</button>
         </Link>
-        <button type="button" onClick={handleDelete} className="btn">Delete</button>
+        <button type="button" onClick={handleDelete} className="btn btn-delete">Delete</button>
       </div>
       </form>
     </div>
