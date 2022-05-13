@@ -61,7 +61,7 @@ const EditPage = (props) => {
       value={form.story}
       onChange={handleChange}
       />
-      <button type="submit" className="btn" onClick={handleSubmit} >Submit</button>
+      <button type="submit" className="btn btn-edit" onClick={handleSubmit} >Submit</button>
     </form>
     </>
    );

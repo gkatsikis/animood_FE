@@ -17,7 +17,7 @@ const Profiles = ({ user, animoods, deleteAnimood }) => {
     <>
       <h1>Vibecheck {user.name}</h1>
       {profile ? 
-        <>
+        <div className="cards">
         {animoods.map((animood) => (
           animood.profile_id === profile.id && 
           <ProfileCard
@@ -26,7 +26,7 @@ const Profiles = ({ user, animoods, deleteAnimood }) => {
             key={animood.id} 
             />
         ))}
-        </>
+        </div>
       :
         <p>No animoods yet</p>
       }

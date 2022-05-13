@@ -18,14 +18,17 @@ const ProfileCard = ({ user, profile, animood, deleteAnimood }) => {
         <h3>Theme: {animood.theme}</h3>
         <h3>Episode: {animood.episode}</h3>
         <p className="story">Story: {animood.story}</p>
-        <Link
-        to='/edit'
-        state={{ animood }}
-        >
-        <button
-        type="button" className="btn btn-edit">Edit</button>
-        </Link>
-        <button type="button" onClick={handleDelete} className="btn btn-delete">Delete</button>
+        <div className="btn-container">
+          <Link
+          to='/edit'
+          state={{ animood }}
+          >
+          <button
+          type="button"
+          className="btn btn-edit">Edit</button>
+          </Link>
+          <button type="button" onClick={handleDelete} className="btn btn-delete">Delete</button>
+        </div>
       </div>
       </form>
     </div>

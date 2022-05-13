@@ -250,6 +250,10 @@ code {
   bottom: -.75rem;
 }
 
+.btn-container {
+  display: flex;
+  flex-direction: column;
+}
 
 .btn-delete {
   width: 15rem;
@@ -287,14 +291,15 @@ code {
 }
 
 .pcard-content {
+  color: white;
   border-radius: 5%;
+  width: 30rem;
   text-align: center;
   background-image: url(https://unsplash.it/500/500/);
-  /* opacity: 50%; */
 }
 
 .title {
-  color:black;
+  color: whitesmoke;
   font-weight: bold;
   text-decoration: underline;
 }
@@ -312,6 +317,16 @@ code {
 .form-container {
   width: 100%;
   height: 100%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn-add {
+  width: 7rem;
+  text-align: center;
 }
 
 .input-box {
