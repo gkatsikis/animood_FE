@@ -11,13 +11,12 @@ const ProfileCard = ({ user, profile, animood, deleteAnimood }) => {
   }
 
   return ( 
-    <div className="profile-container">
-    <form action="">
+    <form action="" className="profile-form">
       <div className="pcard-content">
-        <h2 className="title">{animood.name}</h2>
-        <h3>Theme: {animood.theme}</h3>
-        <h3>Episode: {animood.episode}</h3>
-        <p className="story">Story: {animood.story}</p>
+        <h2 className="title text">{animood.name}</h2>
+        <h3 className="text">Theme: {animood.theme}</h3>
+        <h3 className="text">Episode: {animood.episode}</h3>
+        <p className="story text">Story: {animood.story}</p>
         <div className="btn-container">
           <Link
           to='/edit'
@@ -31,7 +30,6 @@ const ProfileCard = ({ user, profile, animood, deleteAnimood }) => {
         </div>
       </div>
       </form>
-    </div>
    );
 }
  

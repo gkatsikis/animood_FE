@@ -19,7 +19,7 @@ const AnimoodForm = (props) => {
   return ( 
     <>
       <section className="form-container">
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} className="add-form">
           <AnimoodInput form={form} handleChange={handleChange}/>
           <button type="submit" className="btn btn-add">Add Mood</button>
         </form>

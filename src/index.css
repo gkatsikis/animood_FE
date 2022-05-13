@@ -281,27 +281,28 @@ code {
   cursor: pointer;
 }
 
-.profile-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 30rem;
-  height: 20rem;
-  margin: 20px;
-}
-
 .pcard-content {
-  color: white;
   border-radius: 5%;
   width: 30rem;
   text-align: center;
   background-image: url(https://unsplash.it/500/500/);
 }
 
+
+
+.profile-form {
+  height: 20rem;
+  width: 30rem;
+  margin: 20px;
+}
+
 .title {
-  color: whitesmoke;
   font-weight: bold;
   text-decoration: underline;
+}
+
+.text {
+  opacity: 100%;
 }
 
 .login-message {
@@ -319,7 +320,7 @@ code {
   height: 100%;
 }
 
-form {
+.add-form {
   display: flex;
   flex-direction: column;
   align-items: center;
