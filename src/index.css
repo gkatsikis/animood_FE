@@ -388,6 +388,10 @@
     display: flex;
   }
 
+  .text {
+    visibility: hidden;
+  }
+
   .nav-wrap {
     display: flex;
   }
