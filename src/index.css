@@ -1,4 +1,4 @@
-#root {
+/* #root {
   width: 100%;
   height: 100%;
 }
@@ -19,12 +19,16 @@ body {
   letter-spacing: 2px;
   background-color: whitesmoke;
   color: #9c5d04;
-}
-
+} */
+/* 
 nav {
   margin: 10px;
   width: 100%;
   height: 20%;
+}
+
+.icon {
+  visibility: hidden;
 }
 
 .login {
@@ -364,19 +368,40 @@ code {
   width: 10rem;
   border-radius: 35%;
   align-items: left;
-}
+} */
 
 @media only screen and (max-width: 480px) {
 
-  body {
+  /* body {
     background-color: purple;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  } */
+
+  .robin {
+    width: 5rem;
   }
 
-  .profile-container {
+  nav {
+    display: flex;
+  }
+
+  .nav-wrap {
+    display: flex;
+  }
+
+  .nav-links {
+    display: flex;
+    list-style: none;
+  }
+
+  .icon {
+    visibility: visible;
+  }
+
+  /* .profile-container {
     width: 100%;
     align-content: center;
-  }
+  } */
 
   
 }

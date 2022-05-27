@@ -13,7 +13,10 @@ const NavBar = ({ user, handleLogout }) => {
             </li>
             </div>
             <div className="nav-links">
-            <li><Link to="/profile">Profile</Link></li>
+              
+            <li><Link to="/profile"><span class="material-symbols-outlined icon">
+            account_circle
+            </span>Profile</Link></li>
             <li><Link to="/animood">Add a Mood</Link></li>
             <li><Link to="/">Browse Moods</Link></li>
             <li><Link to="" onClick={handleLogout}>Logout</Link></li>
