@@ -382,10 +382,24 @@
 
   .robin {
     width: 5rem;
+    border-radius: 35%;
+    align-items: left;
   }
 
   nav {
     display: flex;
+  }
+
+  ul {
+    width: 100%;
+    padding: 10px;
+  }
+
+  li {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin-right:0px;
   }
 
   .text {
@@ -399,10 +413,16 @@
   .nav-links {
     display: flex;
     list-style: none;
+    align-items: right;
+    padding-left: 50px;
   }
 
   .icon {
-    visibility: visible;
+    display: flex;
+    font-size: 2rem;
+    height: 100%;
+    width: 2rem;
+    margin-right: 25px;
   }
 
   /* .profile-container {
