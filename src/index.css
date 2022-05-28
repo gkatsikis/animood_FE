@@ -30,7 +30,7 @@
   }
 
   .icon {
-    visibility: hidden;
+    display: none;
   }
 
   .login {
