@@ -337,7 +337,7 @@
     height: 2rem;
     text-align: center;
     border: 0px;
-    background-color: rgb(188, 145, 4);
+    background-color: #bc9104;
     opacity: .85;
     border-radius: 5%;
     margin: 15px;
@@ -421,8 +421,14 @@
     display: flex;
     font-size: 2rem;
     height: 100%;
-    width: 2rem;
+    width: 2.5rem;
     margin-right: 25px;
+    color: #bc9104;
+    text-decoration: none;
+  }
+
+  a {
+    text-decoration: none;
   }
 
   /* .profile-container {
