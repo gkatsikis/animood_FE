@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import AnimoodInput from '../AnimoodInput/AnimoodInput';
 import { useNavigate } from 'react-router-dom'
+import Button from '@material-ui/core/Button'
+
 
 const AnimoodForm = (props) => {
   const navigate = useNavigate()
@@ -21,7 +23,7 @@ const AnimoodForm = (props) => {
       <section className="form-container">
         <form onSubmit={handleSubmit} className="add-form">
           <AnimoodInput form={form} handleChange={handleChange}/>
-          <button type="submit" className="btn btn-add">Add Mood</button>
+            <button type="submit" className="btn btn-add"><Button variant="contained" className="material-button">Add Mood</Button></button>
         </form>
       </section>
     </>
