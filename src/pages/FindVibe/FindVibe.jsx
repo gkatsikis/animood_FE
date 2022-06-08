@@ -4,7 +4,7 @@ const FindVibe = ({animoods}) => {
   return ( 
     <>
       <h1>Find Your Vibe</h1>
-      <div className="cards">
+      <div className="cards carousel">
       {animoods.map((animood) => (
         <VibeCard 
         key={animood.id}

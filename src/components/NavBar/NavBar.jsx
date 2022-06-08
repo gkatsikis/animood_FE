@@ -14,16 +14,16 @@ const NavBar = ({ user, handleLogout }) => {
             </div>
             <div className="nav-links">
               
-            <li><Link to="/profile"><span class="material-symbols-outlined icon">
+            <li><Link to="/profile"><span className="material-symbols-outlined icon">
             account_circle
             </span><div className="text">Profile</div></Link></li>
-            <li><Link to="/animood"><span class="material-symbols-outlined icon">
+            <li><Link to="/animood"><span className="material-symbols-outlined icon">
             add_circle
             </span><div className="text">Add a Mood</div></Link></li>
-            <li><Link to="/"><span class="material-symbols-outlined icon">
+            <li><Link to="/"><span className="material-symbols-outlined icon">
             view_carousel
             </span><div className="text">Browse Moods</div></Link></li>
-            <li><Link to="" onClick={handleLogout}><span class="material-symbols-outlined icon">
+            <li><Link to="" onClick={handleLogout}><span className="material-symbols-outlined icon">
             logout
             </span><div className="text">Logout</div></Link></li>
             </div>
