@@ -191,6 +191,7 @@
       top: 0;
       left: 0;
       width: 100%;
+      overflow: auto;
   }
 
   .inner{
@@ -375,6 +376,7 @@
   .material-button {
     visibility: hidden;
   }
+
 }
 
 @media only screen and (max-width: 480px) {
